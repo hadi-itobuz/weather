@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    font-size: 24px;
+    color: white;
+
+}
+
+body {
+    background-color: royalblue;
+}
+
+.icon {
+    height: 30px;
+}
+
+.container {
+    max-width: 768px;
+}
+
+#city-input {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    width: fit-content;
+    text-align: center;
+    width: 50vw;
+
+    @media screen and (min-width:768px) {
+        width: 70vw;
+    }
+
+}
+
+.error-message {
+    color: red;
+}
+
+.weather {
+    &__condition {
+        &__icon {
+            height: 120px;
+
+            @media screen and (min-width:768px) {
+                height: 200px;
+            }
+        }
+
+        &__text {
+            color: (255, 255, 255, 0.8);
+        }
+    }
+
+    &__temprature {
+        &__actual {
+            font-weight: 500;
+            font-size: 2em;
+
+            @media screen and (min-width:450px) {
+                font-size: 3em;
+            }
+        }
+
+        &__feels {
+            color: rgb(255, 255, 255, 0.8);
+        }
+    }
+}
+
+.quote {
+    max-width: 360px;
+}
