@@ -40,10 +40,7 @@ cityInput.addEventListener('click', () => {
 })
 
 cityInput.addEventListener('keydown', (e) => {
-    if (cityInput.style.color !== "white") {
-        cityInput.value = "";
-        cityInput.style.color = "white";
-    }
+    if (cityInput.style.color !== "white") cityInput.click();
     if (e.code === "Enter") {
         const text = cityInput.value;
         (text.length) ? fetchData(text.trim()) : reset("Blank input!!");
